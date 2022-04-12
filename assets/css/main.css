@@ -1618,7 +1618,7 @@ article:last-child {
     justify-content: flex-end;
     align-items: center;
     border-radius: 10%;
-    /* filter: grayscale(100%); */
+    filter: grayscale(100%);
     /* filter: hue-rotate(90deg); */
 
     transform: scale(0.8);
