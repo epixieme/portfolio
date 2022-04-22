@@ -1640,7 +1640,7 @@ article:last-child {
     border-bottom-right-radius: 10%;
     height: auto;
     width: 100%;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
 }
 
 .image {
@@ -1925,7 +1925,8 @@ ul.actions.fit.stacked {
 
 svg {
     height: auto;
-    width: 20%
+    width: 20%;
+    fill:#209DB5;
 }
 
 ul.icons ul.icons2 {
@@ -2454,8 +2455,9 @@ table.default tfoot {
 
 #banner header h2 {
     letter-spacing: 0.10em;
-    font-size: 4em;
+    font-size: 6em;
     /* color: #007C7C; */
+    color:#EDD3D8
 }
 
 #banner header .byline {
@@ -2474,7 +2476,8 @@ table.default tfoot {
 #main {
     position: relative;
     padding: 8em 0em;
-    background: #fff;
+    /* background: #fff; */
+    background: #EDD3D8;
 }
 
 #main header {
@@ -2660,12 +2663,19 @@ table.default tfoot {
 #portfolio-wrapper {
     position: relative;
     padding: 5em 0em 6em 0em;
-    background: #edeff0;
+    /* background: #edeff0; */
+    background: #EDD3D8;
+    /* height:800px */
 }
 
 #portfolio header h2 {
     margin-top: 0.50em;
     color: #229CB5;
+    font-family: 'Bebas Neue', cursive;
+
+}
+h2{  font-family: 'Bebas Neue', cursive;
+   
 }
 
 #portfolio .icon {
