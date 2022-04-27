@@ -305,6 +305,9 @@ header .byline {
     margin: 0.5em 0 0 0;
     padding: 0 0 0.5em 0;
     font-size: 1.8em;
+    color:#abecea;
+    
+    
 }
 
 footer {
@@ -1640,7 +1643,7 @@ article:last-child {
 /* Images */
 
 .centerMainImage {
- 
+
     display: flex;
     flex-direction: column;
    width: 100%;
@@ -1648,11 +1651,12 @@ article:last-child {
     align-items: center;
     border-radius: 10%;
     filter: grayscale(100%);
-    transform: scale(0.8);
+    transform: scale(1);
     transition: 1.5s;
     font-family: 'Bebas Neue', cursive;
     font-size:3.5em;
     gap:100px;
+    
       
 }
 
@@ -2335,8 +2339,8 @@ table.default tfoot {
     font-weight: 400;
     color: #EDD3D8;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 
 }
 
@@ -2500,10 +2504,15 @@ table.default tfoot {
 }
 
 #banner header h2 {
-    letter-spacing: 0.10em;
+    
+    /* letter-spacing: 0.10em; */
     font-size: 6em;
     /* color: #007C7C; */
     color:#EDD3D8;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+
+ 
     
  
   
@@ -2511,25 +2520,16 @@ table.default tfoot {
 
 #banner header h2 span{
     color:#EDD3D8;
-    text-shadow:
+    /* text-shadow:
     0 1px 0px #184853,
     1px 0 0px #184853,
     1px 2px 1px #184853,
     2px 1px 1px #184853,
     2px 3px 2px #184853,
-    3px 2px 2px #184853,
-    3px 4px 2px #184853,
-    4px 3px 3px #184853,
-    4px 5px 3px #184853,
-    5px 4px 2px #184853,
-    5px 6px 2px #184853,
-    6px 5px 2px #184853,
-    5px 4px 2px #184853,
-    5px 6px 2px #184853,
-    6px 5px 2px #184853,
-    6px 7px 1px #184853;
+    3px 2px 2px #184853; */
+
    
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #banner header .byline {
@@ -2573,6 +2573,7 @@ table.default tfoot {
     border-color: rgba(0, 0, 0, 0.2); */
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    
 }
 
 #main .image img {
@@ -2744,12 +2745,13 @@ table.default tfoot {
 #portfolio header h2 {
     margin-top: 0.50em;
     color: #184853;
-    font-family: 'Bebas Neue', cursive;
+    font-family: Arial, Helvetica, sans-serif;
     padding-left: 40px;
+    
 
 }
 h2{  
-    font-family: 'Bebas Neue', cursive;
+    font-family: Arial, Helvetica, sans-serif;
    
 }
 
@@ -2852,6 +2854,7 @@ h2{
 
     #banner header .byline {
         font-size: 1.5em;
+        color:#abecea
     }
 
     /* Main */
@@ -2906,6 +2909,10 @@ h2{
 }
 
 @media screen and (max-width: 736px) {
+
+
+      
+    
     .skills ul li {
         display: flex;
         align-items: center;
@@ -2987,6 +2994,7 @@ h2{
 
     header .byline {
         font-size: 1.1em;
+        color:#abecea
     }
 
     ul.style1 .left {
@@ -3244,6 +3252,7 @@ h2{
         letter-spacing: 0.10em;
         line-height: 1.4em;
         font-size: 1em;
+        color:#abecea
     }
 
     /* Main */
@@ -3342,4 +3351,9 @@ h2{
 
 .mainWrapper{
     border-right: 1px solid #184853;
+}
+.email{
+    position: relative;
+    top:-10px;
+    left:100px;
 }
