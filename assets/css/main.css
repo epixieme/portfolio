@@ -1954,27 +1954,33 @@ ul.actions.fit.stacked {
     /* padding-top: 30px;; */
 }
 
-.skills ul {
+.svgs {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    height:50px;
+    align-items: center;
+    justify-content: center;
+    /* height:50px; */
+    border:1px solid red;
 
 }
+
+
 
 
 .skills ul li {
     display: flex;
     align-items: center;
+    justify-items: center;
+    border:red 1px solid;
     width: 20%;
 
-    gap: 2%;
+    /* gap: 2%; */
 }
 
 svg {
     height: auto;
     width: 20%;
     fill: #184853;
+    border:red 1px solid;
 }
 
 ul.icons ul.icons2 {
@@ -2743,11 +2749,14 @@ table.default tfoot {
     /* background: #edeff0; */
     /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-   
+ 
    
     height:1300px 
 }
+#portfolio-wrapper p{
+    color:#184853;
 
+}
 #portfolio header h2 {
     margin-top: 0.50em;
     color: #184853;
