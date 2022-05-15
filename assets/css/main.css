@@ -1950,38 +1950,59 @@ ul.actions.fit.stacked {
 }
 
 /* Icons */
-.skills {
-    /* padding-top: 30px;; */
-}
 
 .svgs {
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* height:50px; */
-    border:1px solid red;
+    justify-content: space-between;
+    width:100%;
+    /* border: 1px solid red; */
 
 }
 
-
-
-
-.skills ul li {
+.svgs li{
     display: flex;
-    align-items: center;
-    justify-items: center;
-    border:red 1px solid;
-    width: 20%;
+    /* align-items: center;
+    justify-items: flex;  */
+    /* border: 1px solid red; */
+    justify-content: center;
+    width:40%;
+}
+#git{
+    background: url(assets/css/images/git-square-brands.svg);
+}
+
+.skillText{
+    display: flex;
+   justify-content: space-between;
+
+   /* border: 1px solid red; */
+}
+.skillText li{
+    width:100%;
+text-align: center;
+/* border: 1px solid red; */
+  gap:10%;
+
+
+}
+
+.skills li {
+    /* display: flex; */
+    /* align-items: center;
+    justify-items: center; */
+    /* border:red 1px solid; */
+    
 
     /* gap: 2%; */
 }
 
 svg {
     height: auto;
-    width: 20%;
-    fill: #184853;
-    border:red 1px solid;
-}
+    width: 30%;
+    fill: #184853;}
+    /* border:red 1px solid; */
+/* } */
 
 ul.icons ul.icons2 {
     position: relative;
@@ -2925,16 +2946,17 @@ h2{
 
 @media screen and (max-width: 736px) {
 
+    .skillText li{
+        width:100%;
+    text-align: center;
+    /* border: 1px solid red; */
+      gap:10%;
 
+    
+    }
       
     
-    .skills ul li {
-        display: flex;
-        align-items: center;
-        width: 20%;
-    font-size: 0.9em;
-        gap: 2%;
-    }
+   
  .aboutme{
 
         border-left:none
@@ -2975,7 +2997,7 @@ h2{
     }
 
     p {
-        text-align: justify;
+        text-align: left;
     }
 
     section,
