@@ -10,6 +10,14 @@
 
 /* my added styles */
 
+#bottomWave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1; 
+
+}
+
 #portfolio header h2::before {
 
     content: '';
@@ -78,7 +86,7 @@
 
 #sw-js-blob-svg {
     position: absolute;
-    top: -200px;
+    top: -150px;
     left: 350px
 }
 
@@ -88,7 +96,7 @@
     position: absolute;
     z-index: 4;
     left: 420px;
-    top: -80px;
+    top: -50px;
 }
 
 html,
@@ -2455,7 +2463,7 @@ form textarea {
     width: 100%;
     padding: 0.85em;
     outline: none;
-    color: white;
+    color: black;
     /* color: rgba(255, 255, 255, 0.5); */
 }
 
@@ -2486,7 +2494,7 @@ form :-ms-input-placeholder {
 
 input::placeholder,
 textarea::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: black;
 }
 
 form ::-moz-focus-inner {
@@ -2542,7 +2550,7 @@ table.default tfoot {
     font-size: 0.85em;
     letter-spacing: 2px;
     padding: 0.85em 2.75em 0.85em 2.75em;
-    color: #fff !important;
+    color: black!important;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1em;
@@ -2720,18 +2728,21 @@ table.default tfoot {
     top: 0.5em;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    z-index: 2;
+    z-index: 5;
 
 }
 
 #nav>ul>li>a:hover {
+    position: relative;
     color: #EDD3D8;
+    z-index: 5;
 }
 
 #nav>ul>li {
     position: relative;
     z-index: 2;
     float: left;
+    z-index: 5;
 }
 
 #nav>ul>li>ul {
@@ -2750,7 +2761,7 @@ table.default tfoot {
     letter-spacing: 0.06em;
     /* text-transform: uppercase; */
     position: relative;
-    z-index: 2;
+    z-index: 5;
     text-decoration: none;
     font-weight: 400;
     font-size: 1em;
@@ -2941,6 +2952,8 @@ table.default tfoot {
 
 
 #main .box {
+    position: relative;
+    z-index: 5;
     margin-top: -2px;
     padding: 2em;
     border-radius: 0px 0px 8px 8px;
@@ -3093,7 +3106,7 @@ table.default tfoot {
     position: relative;
     padding: 2em 0em 3em 0em;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5);
+    color: black
 }
 
 /* Featured */
@@ -3784,3 +3797,6 @@ h2 {
 .mainWrapper {
     /* border-right: 1px solid #184853; */
 }
+/* sort out boxes with images at 1009 res */
+/* /fix nav and bring to front with z index - thing it could be the nav hover that needs a z index */
+/* // button on safari */
