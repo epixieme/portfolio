@@ -10,13 +10,7 @@
 
 /* my added styles */
 
-#bottomWave{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 1; 
 
-}
 
 #portfolio header h2::before {
 
@@ -1794,12 +1788,6 @@ br.clear {
 
 @media screen and (max-width: 736px) {
 
-
-   
-
-
-
-
     .centerMainImage::before {
         content: '';
         position: absolute;
@@ -2127,7 +2115,7 @@ ul.actions.fit.stacked {
     #main header h2::before {
         content: '';
         position: absolute;
-        min-width: 25%;
+        min-width: 150px;
         height: 35px;
         border: 6px solid #068A81;
         transform: skewX(-70deg);
@@ -2141,7 +2129,7 @@ ul.actions.fit.stacked {
     #portfolio header h2::before {
         content: '';
         position: absolute;
-        min-width: 20%;
+        min-width: 120px;
         height: 26px;
         border: 6px solid #068A81;
         transform: skewX(-70deg);
@@ -2164,8 +2152,8 @@ ul.actions.fit.stacked {
         position: relative;
         top: 70px;
         left: -70px; 
-        width:40%;
-        height:50px;
+        min-width:180px;
+        height:55px;
     }
 
     .birds {
@@ -2952,8 +2940,6 @@ table.default tfoot {
 
 
 #main .box {
-    position: relative;
-    z-index: 5;
     margin-top: -2px;
     padding: 2em;
     border-radius: 0px 0px 8px 8px;
