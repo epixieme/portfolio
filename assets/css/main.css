@@ -9,6 +9,14 @@
 */
 
 /* my added styles */
+.portfolioImg{
+    
+ 
+ object-fit: cover;
+ object-position:top left;
+ /* height:auto;
+ width:100% */
+}
 
 .word {
 	/* font-family: 'Anton', sans-serif; */
@@ -118,8 +126,7 @@
 
 
    
-#portfolio header h2::before {
-
+/* #portfolio header h2::before {
     content: '';
     position: absolute;
     min-width: 15%;
@@ -132,9 +139,9 @@
 
 
 
-}
+} */
 
-#main header h2::before {
+/* #main header h2::before {
     content: '';
     position: absolute;
     min-width: 20%;
@@ -145,7 +152,8 @@
     z-index: -1;
     border-radius: 50%;
 
-}
+} */
+
 .email {
     position: relative;
     top: 20px;
@@ -449,7 +457,8 @@ a {
     -ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
     transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
     outline: 0;
-    color: #184853;
+    color: black;
+    ;
     text-decoration: none;
     font-weight: 700
 }
@@ -1796,7 +1805,7 @@ br.clear {
 
 @media screen and (max-width: 1080px) {
 
-    #portfolio header h2::before {
+    /* #portfolio header h2::before {
         content: '';
         position: absolute;
         min-width: 20%;
@@ -1818,7 +1827,7 @@ br.clear {
         background-color: rgb(216, 176, 191);
         z-index: -1;
         border-radius: 50%;
-    }
+    } */
 
     #sw-js-blob-svg {
      
@@ -1863,7 +1872,7 @@ br.clear {
         width:30%;
         height:50px;
     }
-    #portfolio header h2::before {
+    /* #portfolio header h2::before {
         content: '';
         position: absolute;
         min-width: 20%;
@@ -1885,7 +1894,7 @@ br.clear {
         background-color: rgb(216, 176, 191);
         z-index: -1;
         border-radius: 50%;
-    }
+    } */
 
 
     .container {
@@ -2234,7 +2243,7 @@ ul.actions.fit.stacked {
 
 @media screen and (max-width: 736px) {
 
-    
+/*     
     #main header h2::before {
         content: '';
         position: absolute;
@@ -2246,10 +2255,10 @@ ul.actions.fit.stacked {
         z-index: -1;
         border-radius: 50%;
 
-    }
+    } */
 
 
-    #portfolio header h2::before {
+    /* #portfolio header h2::before {
         content: '';
         position: absolute;
         min-width: 120px;
@@ -2259,7 +2268,7 @@ ul.actions.fit.stacked {
         background-color: #068A81;
         z-index: -1;
         border-radius: 50%;
-    }
+    } */
 
   
     #sw-js-blob-svg {
@@ -2395,6 +2404,7 @@ ul.actions.fit.stacked {
     text-align: center;
     /* border: 1px solid red; */
     gap: 10%;
+    color:black;
 
 
 }
@@ -3248,14 +3258,14 @@ table.default tfoot {
 }
 
 #portfolio-wrapper p {
-    color: #184853;
+    color: black;
 
 }
 
 #portfolio header h2 {
     position: relative;
     margin-top: 0.50em;
-    color: #184853;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 40px;
     z-index: 2;
