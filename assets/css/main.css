@@ -10,6 +10,10 @@
 
 /* my added styles */
 
+h2{
+text-align: left;
+}
+
 .mainWrapper {
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -749,7 +753,7 @@ br.clear {
 }
 
 .row>* {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 0px;
 }
 
 .extraPad {
@@ -997,7 +1001,7 @@ br.clear {
     }
 
     .row>* {
-        padding: 0 0 0 40px;
+        padding: 0 0 0 0px;
     }
 
     .row.gtr-uniform {
@@ -3288,7 +3292,7 @@ table.default tfoot {
     margin-top: 0.50em;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     z-index: 2;
 
 
