@@ -32,6 +32,233 @@ body {
   scroll-behavior: smooth;
 }
 
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  color: white;
+}
+
+a.active {
+  color: #b7a3c5 !important;
+  text-shadow: 1px 1px 2px black;
+}
+
+a {
+  transition: 1s ease-in-out;
+}
+
+.header {
+  background: #058a81;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  box-shadow: 0 8px 32px 0 #b7a3c5;
+  padding-inline: 20px;
+}
+
+#banner {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-block: 60px; */
+  align-items: center;
+  line-height: 1.5;
+}
+
+#banner h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+#banner h2 {
+  font-size: 5em;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fadeIn 4s ease-in;
+}
+
+.content h1 {
+  text-shadow: 1px 1px 1px #000;
+}
+
+#banner-image-container {
+  position: relative;
+}
+
+.about {
+  height: 100vh;
+  background: url(../images/offer.png) no-repeat;
+  background-size: 100vw 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-block: 50px;
+}
+
+.about .about-me {
+  /* padding: 60px; */
+  line-height: 1.5;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.parent-container {
+  background: url(../images/blob-scene-haikei.png) no-repeat;
+  background-size: 100vw 100vh;
+
+  height: 100vh; /* Full height of the viewport (optional) */
+  padding-bottom: 100px;
+}
+
+.portfolio {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: 1fr;
+}
+.portfolio-text {
+  text-align: center;
+  background: #333333;
+  color: white;
+  padding: 40px;
+}
+
+.parent-container-skills {
+  padding: 20px;
+  height: 100vh;
+}
+
+.skills-button-grid {
+  /* max-width: 800px; */
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* The secret sauce that enables gradient rotation. NOTE: does not work in all browsers. https://caniuse.com/?search=%40property */
+@property --border-angle-1 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@property --border-angle-2 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 90deg;
+}
+
+@property --border-angle-3 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 180deg;
+}
+
+/* Display-P3 color, when supported. */
+@supports (color: color(display-p3 1 1 1)) {
+  :root {
+    --bright-green: color(display-p3 1 1 1);
+    --bright-white: color(display-p3 1.4 0 1);
+    --bright-brown: color(display-p3 1 1 1);
+  }
+}
+
+@keyframes rotateBackground {
+  to {
+    --border-angle-1: 360deg;
+  }
+}
+
+@keyframes rotateBackground2 {
+  to {
+    --border-angle-2: -270deg;
+  }
+}
+
+@keyframes rotateBackground3 {
+  to {
+    --border-angle-3: 540deg;
+  }
+}
+
+button {
+  --border-angle-1: 0deg;
+  --border-angle-2: 90deg;
+  --border-angle-3: 180deg;
+  color: inherit;
+  font-size: 12px;
+  font-family: inherit;
+  border: 0;
+  padding: var(--border-size);
+  display: flex;
+  width: max-content;
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  background-image: conic-gradient(
+      from var(--border-angle-1) at 10% 15%,
+      transparent,
+      var(--bright-white) 10%,
+      transparent 30%,
+      transparent
+    ),
+    conic-gradient(
+      from var(--border-angle-2) at 70% 60%,
+      transparent,
+      var(--bright-green) 10%,
+      transparent 60%,
+      transparent
+    ),
+    conic-gradient(
+      from var(--border-angle-3) at 50% 20%,
+      transparent,
+      var(--bright-brown) 10%,
+      transparent 50%,
+      transparent
+    );
+  animation: rotateBackground 3s linear infinite,
+    rotateBackground2 8s linear infinite, rotateBackground3 13s linear infinite;
+}
+
+/* Change this background to transparent to see how the gradient works */
+button div {
+  background-color: #333333;
+  padding: 1em 1.5em;
+  border-radius: calc(var(--border-radius) - var(--border-size));
+  color: var(--foreground);
+}
+
+@font-face {
+  font-family: "Aspekta";
+  font-weight: normal;
+  src: url("https://assets.codepen.io/240751/Aspekta-300.woff2") format("woff2");
+}
+
 @media screen and (min-width: 600px) {
   .header {
     background: #058a81;
@@ -42,9 +269,7 @@ body {
     width: 100vw;
     justify-content: space-between;
     height: 100px;
-    /* border-bottom: #b7a3c5 solid 1px; */
     box-shadow: 0 8px 32px 0 #b7a3c5;
-    /* border: 1px solid red; */
   }
 
   .header #logo {
@@ -74,25 +299,6 @@ body {
     z-index: 10;
   }
 
-  a,
-  ul,
-  li {
-    text-decoration: none;
-    list-style-type: none;
-  }
-
-  a:link,
-  a:visited {
-    color: white;
-  }
-  a {
-    transition: 1s ease-in-out;
-  }
-
-  a:hover {
-    color: hotpink;
-  }
-
   .navMenu {
     color: white;
     text-decoration: none;
@@ -108,8 +314,6 @@ body {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-
-    /* border: 1px solid red; */
   }
 
   #banner {
@@ -118,7 +322,6 @@ body {
     text-align: center;
     display: flex;
     width: 100%;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
     padding-block: 60px;
@@ -128,20 +331,9 @@ body {
 
   #banner h1 {
     font-size: 2em;
-    margin: 0;
-    padding: 0;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    color: white;
-    text-shadow: 1px 1px 1px #000;
-
-    /* border: 1px solid red; */
   }
   #banner h2 {
     font-size: 5em;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
   }
 
   .content {
@@ -150,8 +342,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    /* border: 1px solid red; */
+    animation: fadeIn 4s ease-in;
   }
+
   .content h1 {
     text-shadow: 1px 1px 1px #000;
   }
@@ -159,22 +352,17 @@ body {
   #birds img {
     margin: 0;
     padding: 0;
-
-    /* border: 1px solid red; */
   }
 
   #banner-image-container {
     position: relative;
     display: flex;
-    /* height: 100vh; */
     justify-content: space-evenly;
     align-items: flex-start;
-    /* border: 1px solid red; */
   }
 
   .about {
     height: 70vh;
-    /* width: 100vw; */
     background: url(../images/offer.png) no-repeat;
     background-size: 100vw 70vh;
     display: flex;
@@ -184,11 +372,7 @@ body {
 
   .about .about-me {
     padding: 60px;
-    /* padding-block: 50px; */
     line-height: 1.5;
-    /* margin-left: 60px;
-    margin-bottom: 60px; */
-    /* height: 80%; */
     width: 50vw;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -201,29 +385,17 @@ body {
   .parent-container {
     background: url(../images/blob-scene-haikei.png) no-repeat;
     background-size: 100vw 100vh;
-
-    /* background-color: #333; */
     display: flex;
     justify-content: center; /* Centers the child horizontally */
-    /* border: 1px solid red; */
     height: 100vh; /* Full height of the viewport (optional) */
-    /* padding-block: 100px; */
   }
 
   .portfolio {
-    /* position: relative;
-    top: -10px; */
     min-height: 100vh;
     max-width: 1200px;
     display: grid;
     grid-gap: 3rem;
-    /* width: 100vw; */
-    /* height: 900px; */
-    /* align-self: auto; */
-    /* margin: 0 auto; */
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
-    /* border: 1px solid red; */
   }
   .portfolio-text {
     text-align: center;
@@ -242,10 +414,7 @@ body {
   .card-image-container {
     display: flex;
     justify-content: center;
-    /* align-items: flex-start; */
-
     border-radius: 20px;
-    /* height: 300px; */
   }
 
   .card-text-container {
@@ -264,12 +433,6 @@ body {
   img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    /* width: 100%;
-    height: auto;
-    vertical-align: middle;
-    object-fit: cover;
-    border: 1px solid red; */
-
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -285,8 +448,6 @@ body {
     max-width: 600px;
     display: grid;
     grid-gap: 1rem;
-    /* align-self: auto; */
-    /* margin: 0 auto; */
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
   }
 
@@ -313,7 +474,7 @@ body {
   @supports (color: color(display-p3 1 1 1)) {
     :root {
       --bright-green: color(display-p3 1 1 1);
-      --bright-white: color(display-p3 1.4 1 1);
+      --bright-white: color(display-p3 1.4 0 1);
       --bright-brown: color(display-p3 1 1 1);
     }
   }
@@ -398,13 +559,21 @@ body {
     align-items: center;
     height: 100px;
     border-top: #b7a3c5 solid 1px;
-
-    /* margin-top: 200px; */
   }
 
   footer ul {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+  }
+}
+
+/* animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
