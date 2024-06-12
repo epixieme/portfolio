@@ -75,10 +75,11 @@ a {
   /* padding-block: 60px; */
   align-items: center;
   line-height: 1.5;
+  padding: 10px;
 }
 
 #banner h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0;
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -86,10 +87,14 @@ a {
   text-shadow: 1px 1px 1px #000;
 }
 #banner h2 {
-  font-size: 5em;
+  font-size: 3em;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+#banner img {
+  width: 70%;
+  height: 70%;
 }
 
 .content {
@@ -110,18 +115,19 @@ a {
 }
 
 .about {
-  height: 100vh;
-  background: url(../images/offer.png) no-repeat;
-  background-size: 100vw 100vh;
   display: flex;
   flex-direction: column;
-  padding-block: 50px;
+  align-items: center;
+  height: 80vh;
+  background: url(../images/offer.png) no-repeat;
+  background-size: 100vw 100vh;
+  padding-block: 10px;
 }
 
 .about .about-me {
-  /* padding: 60px; */
+  padding: 20px;
   line-height: 1.5;
-  width: 100vw;
+  width: 90vw;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -130,16 +136,15 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .parent-container {
-  background: url(../images/blob-scene-haikei.png) no-repeat;
+  background: url(../images/blob-scene-haikei.png) repeat;
   background-size: 100vw 100vh;
-
+  padding-inline: 20px;
   height: 100vh; /* Full height of the viewport (optional) */
-  padding-bottom: 100px;
 }
 
 .portfolio {
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 1rem;
   grid-template-columns: 1fr;
 }
 .portfolio-text {
@@ -148,17 +153,54 @@ a {
   color: white;
   padding: 40px;
 }
-
-.parent-container-skills {
-  padding: 20px;
-  height: 100vh;
+.card {
+  border: 2px solid white;
+  height: 420px;
+  border-radius: 20px;
+  background-color: #333333;
+  color: white;
+}
+.card-image-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
 }
 
+.card-text-container {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-inline: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.parent-container-skills {
+  /* height: 100vh; */
+}
+/* 
 .skills-button-grid {
-  /* max-width: 800px; */
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.3rem;
+  grid-template-columns: 130px 130px 130px;
+} */
+.skills-button-grid {
+  display: grid;
+  grid-gap: 0.3rem;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* The secret sauce that enables gradient rotation. NOTE: does not work in all browsers. https://caniuse.com/?search=%40property */
@@ -259,6 +301,22 @@ button div {
   src: url("https://assets.codepen.io/240751/Aspekta-300.woff2") format("woff2");
 }
 
+footer {
+  background-color: #333333;
+
+  display: flex;
+  color: white;
+  align-items: center;
+  height: 100px;
+  border-top: #b7a3c5 solid 1px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 @media screen and (min-width: 600px) {
   .header {
     background: #058a81;
@@ -273,29 +331,35 @@ button div {
   }
 
   .header #logo {
-    width: 10vw;
+    width: 5vw;
+    height: 5vh;
+
+    display: flex;
+    align-items: center;
   }
 
   .header #logo #blob-svg {
-    height: 20px;
+    /* height: 60px; */
     position: relative;
-    left: -10px;
-    top: 10px;
+    left: 40px;
+    top: 0;
+    box-shadow: 0 8px 32px 0 #b7a3c5;
   }
   .header #logo p a,
   .header #logo p a:visited {
-    color: white;
+    color: #333333;
   }
 
   .header #logo p {
     position: relative;
     padding: 0;
     margin: 0;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    color: white;
-    text-shadow: 1px 1px 1px #000;
-    font-size: 24px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+    color: #333333;
+
+    font-size: 16px;
     z-index: 10;
   }
 
@@ -306,7 +370,7 @@ button div {
     display: flex;
     justify-content: space-evenly;
     width: 50vw;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .navLink,
@@ -323,6 +387,7 @@ button div {
     display: flex;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     padding-block: 60px;
     align-items: center;
@@ -366,8 +431,10 @@ button div {
     background: url(../images/offer.png) no-repeat;
     background-size: 100vw 70vh;
     display: flex;
+    flex-direction: row;
     padding-inline: 50px;
     padding-block: 50px;
+    align-items: center;
   }
 
   .about .about-me {
@@ -386,6 +453,7 @@ button div {
     background: url(../images/blob-scene-haikei.png) no-repeat;
     background-size: 100vw 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: center; /* Centers the child horizontally */
     height: 100vh; /* Full height of the viewport (optional) */
   }
