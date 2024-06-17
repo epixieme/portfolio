@@ -443,9 +443,9 @@ footer ul {
 
 @media (min-width: 320px) {
   .skills-button-grid {
-    padding-inline: 10px;
+    /* padding-inline: 10px; */
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 0.5rem;
+    column-gap: 0.8rem;
     row-gap: 1rem;
 
     /* row-gap: 0.5rem; */
