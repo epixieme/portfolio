@@ -65,6 +65,7 @@ a {
   height: 100px;
   box-shadow: 0 8px 32px 0 #b7a3c5;
   padding-inline: 20px;
+  /* border-bottom: 1px solid red; */
 }
 
 .header #logo {
@@ -159,12 +160,10 @@ a {
 .main-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
   background: url(../images/offer.png) repeat;
   background-size: cover;
-
-  /* border: 1px solid red; */
 }
 .main-content p {
   padding: 10px;
@@ -176,6 +175,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   /* height: 100%; */
 }
 
@@ -194,11 +194,13 @@ a {
 
 .parent-container-skills {
   padding: 20px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  /* border: 1px solid red; */
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
   /* height: 500px; */
   /* padding-block: 100px; */
 }
@@ -207,7 +209,9 @@ a {
   display: grid;
   grid-gap: 0.3rem;
   line-height: 1.5;
-  width: 90vw;
+  /* width: 100%; */
+
+  place-items: center;
 }
 
 .parent-container {
@@ -227,11 +231,14 @@ a {
   grid-template-columns: 1fr;
 }
 .portfolio-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background: #333333;
   color: white;
-  padding: 40px;
-  height: 20vh;
+  /* padding: 40px; */
+  height: 100px;
   /* margin-top: 200px; */
 }
 .card {
@@ -438,11 +445,11 @@ footer ul {
     grid-template-columns: repeat(5, 1fr);
   }
 } */
-/* @media (min-width: 900px) {
+@media (min-width: 900px) {
   .skills-button-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
   }
-} */
+}
 
 /* @media (min-width: 1100px) {
   .skills-button-grid {
@@ -456,14 +463,14 @@ footer ul {
   }
 } */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1080px) {
   .header {
     background: #058a81;
     color: white;
     text-align: center;
     display: flex;
     align-items: center;
-    width: 100vw;
+
     justify-content: space-between;
     height: 100px;
     box-shadow: 0 8px 32px 0 #b7a3c5;
@@ -569,14 +576,14 @@ footer ul {
   }
 
   .main-content {
-    height: 70vh;
+    /* height: 48vh; */
     background: url(../images/offer.png) no-repeat;
-    background-size: 100vw 70vh;
+    background-size: 100vw 100vh;
     display: flex;
     flex-direction: row;
 
     padding-inline: 50px;
-    padding-block: 50px;
+    padding-block: 30px;
     align-items: flex-start;
     /* border: 1px solid red; */
   }
@@ -587,14 +594,17 @@ footer ul {
     flex-direction: column;
     padding-right: 20px;
     justify-content: center;
-    align-items: flex-start;
-    height: 100%;
+    align-items: center;
+    width: 60%;
+
+    /* height: 100%; */
     /* border: 1px solid red; */
   }
 
   .about-me {
     display: flex;
     flex-direction: column;
+
     /* padding: 20px; */
     /* padding-bottom: 30px; */
     line-height: 1.5;
@@ -603,7 +613,7 @@ footer ul {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    height: 500px;
+    /* height: 500px; */
     /* border: 1px solid rgba(255, 255, 255, 0.18); */
     border: 1px solid #ff04ff;
   }
@@ -625,10 +635,14 @@ footer ul {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
   .portfolio-text {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
     background: #333333;
     color: white;
-    padding: 40px;
+    /* padding: 40px; */
+    height: 100px;
   }
 
   .card {
@@ -677,10 +691,10 @@ footer ul {
 
   /* skills buttons */
   .parent-container-skills {
-    padding: 0;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 50vw;
     /* border: 1px solid red; */
     /* padding-top: 100px; */
@@ -691,6 +705,7 @@ footer ul {
     display: grid;
     column-gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    place-items: center;
   }
 
   /* The secret sauce that enables gradient rotation. NOTE: does not work in all browsers. https://caniuse.com/?search=%40property */
