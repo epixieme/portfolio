@@ -709,7 +709,7 @@ footer ul {
 
   /* skills buttons */
   .parent-container-skills {
-    padding-left: 30px;
+    /* padding-left: 30px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -721,7 +721,7 @@ footer ul {
     display: grid;
     column-gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-    place-items: center;
+    /* place-items: center; */
   }
 
   /* The secret sauce that enables gradient rotation. NOTE: does not work in all browsers. https://caniuse.com/?search=%40property */
