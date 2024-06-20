@@ -479,11 +479,9 @@ footer ul {
   width: 100%;
 }
 
-.fa-brands,
-.fa-solid {
-  font-size: 1.5em;
+.fa-brands:visited,
+.fa-solid:link {
   color: white;
-  padding: 10px;
 }
 
 .fa-brands:hover,
