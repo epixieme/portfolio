@@ -331,6 +331,11 @@ a {
 .card-image-container:hover .card-overlay {
   opacity: 1;
 }
+.card-overlay a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
 .card-image-container {
   position: relative;
   display: flex;
