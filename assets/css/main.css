@@ -222,7 +222,7 @@ a {
   font-family: "Poppins", sans-serif;
 }
 .parent-container-skills {
-  /* padding: 20px; */
+  padding: 10px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
