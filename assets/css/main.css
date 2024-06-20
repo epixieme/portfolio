@@ -23,6 +23,12 @@ h2 {
   font-weight: 600;
 }
 
+p {
+  font-size: 1rem;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -124,6 +130,17 @@ a {
   align-items: center;
   background: url(../images/offer.png) no-repeat;
   background-size: cover;
+  /* background: url(../images/offer.png) no-repeat;
+  background-size: 100vw 100vh;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  line-height: 1.5;
+  padding: 10px; */
 }
 
 #banner h1 {
@@ -216,13 +233,15 @@ a {
   font-family: "Poppins", sans-serif;
 }
 .parent-container-skills {
+  /* padding: 20px; */
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  /* width: 100%; */
   border-radius: 10px;
-  padding-inline: 10px;
+  /* padding-inline: 10px; */
   width: 100%;
 }
 
@@ -262,13 +281,13 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  /* background: #333333; */
   background: #f6e8e1;
   height: 100px;
 }
 
 .card-text-container p {
   padding: 20px;
-  color: white;
 }
 
 .project-stack {
@@ -285,8 +304,6 @@ a {
   height: 620px;
   border-radius: 20px;
   background-color: #333333;
-}
-.card p {
   color: white;
 }
 
@@ -296,10 +313,7 @@ a {
   align-items: center;
 }
 
-.card-button a,
-a:active,
-a:visited,
-a:link {
+.card-button a:active {
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -320,7 +334,6 @@ a:link {
   transition: opacity 0.5s;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  color: white;
 }
 .card-image-container:hover .card-overlay {
   opacity: 1;
@@ -343,10 +356,6 @@ a:link {
   border-bottom-right-radius: 20px;
   height: auto;
   font-family: "Roboto", sans-serif;
-}
-
-.card-text-container p {
-  color: white;
 }
 
 img {
@@ -728,7 +737,7 @@ footer ul {
     width: 100%;
     max-width: 100vw;
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     padding-inline: 60px;
     padding-block: 60px;
