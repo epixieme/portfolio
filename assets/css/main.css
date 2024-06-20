@@ -479,11 +479,6 @@ footer ul {
   width: 100%;
 }
 
-footer a:link,
-a:visited {
-  color: white;
-}
-
 .fa-brands,
 .fa-solid {
   font-size: 1.5em;
