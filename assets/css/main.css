@@ -130,22 +130,11 @@ a {
   align-items: center;
   background: url(../images/offer.png) no-repeat;
   background-size: cover;
-  /* background: url(../images/offer.png) no-repeat;
-  background-size: 100vw 100vh;
-  color: white;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  align-items: center;
-  line-height: 1.5;
-  padding: 10px; */
 }
 
 #banner h1 {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
@@ -194,7 +183,7 @@ a {
 }
 
 .title h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #034c47;
   font-family: "Poppins", sans-serif;
 }
@@ -228,7 +217,7 @@ a {
 
 .about-me h2 {
   padding: 5px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #034c47;
   font-family: "Poppins", sans-serif;
 }
@@ -301,9 +290,13 @@ a {
 
 .card {
   border: 2px solid white;
-  height: 620px;
+  height: 650px;
   border-radius: 20px;
   background-color: #333333;
+  color: white;
+}
+
+.card p {
   color: white;
 }
 
@@ -495,66 +488,6 @@ footer ul {
   transform: scale(1.2);
 }
 
-@media (min-width: 320px) {
-  /* .skills-button-grid {
-    padding: 10px;
-
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 1rem;
-    border-radius: 10px;
-
-
-  } */
-  .project-stack {
-    /* padding-block: 10px; */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-  }
-}
-
-@media (min-width: 430px) {
-  /* .skills-button-grid {
-    padding: 10px;
-    column-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 1rem;
-    width: 100%;
-  } */
-}
-@media (min-width: 500px) {
-  /* .skills-button-grid {
-    padding: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 1rem;
-  }
-} */
-}
-
-@media (min-width: 600px) {
-  /* .skills-button-grid {
-    padding: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 1rem;
-  } */
-}
-
-@media (min-width: 710px) {
-  /* .skills-button-grid {
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 1rem;
-  } */
-}
-@media (min-width: 900px) {
-  /* .skills-button-grid {
-    grid-template-columns: repeat(6, 1fr);
-    row-gap: 1rem;
-  } */
-}
-
 @media screen and (min-width: 1080px) {
   .header {
     /* background: #058a81;
@@ -662,6 +595,13 @@ footer ul {
     animation: fadeIn 4s ease-in;
   }
 
+  .about-me h2 {
+    padding: 5px;
+    font-size: 2rem;
+    color: #034c47;
+    font-family: "Poppins", sans-serif;
+  }
+
   .my-skills {
     display: flex;
     flex-direction: column;
@@ -692,6 +632,22 @@ footer ul {
     padding-block: 30px;
     align-items: flex-start;
     justify-content: space-evenly;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    /* border: 1px solid red; */
+    padding: 20px 10px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .title h2 {
+    font-size: 3rem;
+    color: #034c47;
+    font-family: "Poppins", sans-serif;
   }
 
   .about-me {
