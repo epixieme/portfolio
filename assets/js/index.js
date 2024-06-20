@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentSection = "home";
 
     sections.forEach((section) => {
+      // const sectionTop = section.offsetTop;
       const sectionTop = section.offsetTop - header.offsetHeight;
 
       if (window.scrollY === 0) {
