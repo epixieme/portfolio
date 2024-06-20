@@ -57,7 +57,6 @@ li {
 
 a:link,
 a:visited {
-  /* color: white; */
   color: #333333;
 }
 
@@ -478,6 +477,11 @@ footer ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+footer a:link,
+a:visited {
+  color: white;
 }
 
 .fa-brands,
