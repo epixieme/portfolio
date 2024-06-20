@@ -465,18 +465,32 @@ button div {
 footer {
   background-color: #333333;
   display: flex;
+  flex-direction: column;
   color: white;
+
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   height: 100px;
   border-top: #b7a3c5 solid 1px;
   padding-inline: 20px;
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
 footer ul {
+  color: white;
   display: flex;
-  justify-content: space-between;
+
+  /* flex-wrap: column;
+  /* align-items: center; */
+  justify-content: center;
   width: 100%;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px;
 }
 
 .fa-brands:visited,
@@ -711,7 +725,8 @@ footer ul {
   }
 
   footer {
-    justify-content: space-between;
+    flex-direction: row;
+    /* justify-content: space-between; */
     align-items: center;
     height: 100px;
   }
