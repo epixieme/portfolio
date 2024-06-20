@@ -62,11 +62,11 @@ a:visited {
 
 a.active {
   color: #b7a3c5;
-  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
 }
 
 a {
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .header {
@@ -566,7 +566,7 @@ footer ul {
 
   a.nav-link:hover {
     color: #b7a3c5 !important;
-    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
   }
 
   #banner {
