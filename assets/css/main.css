@@ -243,7 +243,7 @@ a {
   display: grid;
   gap: 0.3rem;
   line-height: 1.5;
-  background: #cdc5c5;
+  background: #f5e6e1;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
   place-items: center;
 }
