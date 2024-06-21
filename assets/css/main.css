@@ -222,7 +222,7 @@ a {
 }
 .parent-container-skills {
   padding: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,7 +234,7 @@ a {
 }
 
 .skills-button-grid {
-  border-radius: 10px;
+  /* border-radius: 10px; */
 
   width: 100%;
   /* border: 1px solid white; */
@@ -248,9 +248,32 @@ a {
   place-items: center;
 }
 
+.devicon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: #eeeeee;
+  transition: all 0.5s;
+}
+
+.devicon-container figcaption {
+  font-size: 0.8rem;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
 .devicons {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
+}
+.devicon-container:hover {
+  transform: scale(1.1);
+  /* background: black; */
 }
 
 .parent-container-portfolio {
@@ -601,6 +624,7 @@ footer ul {
   #banner h1 {
     font-size: 4em;
     color: #000000;
+    font-weight: 700;
   }
   #banner h2 {
     font-size: 4em;
