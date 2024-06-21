@@ -1,3 +1,5 @@
+// import { DotLottie } from "@lottiefiles/dotlottie-web";
+
 const links = document.querySelectorAll(".nav-link");
 
 function handleNavLinks(event) {
@@ -65,4 +67,24 @@ getInTouchButton.addEventListener("click", () =>
   handleGetinTouch(getInTouchButton)
 );
 
-// Path: assets/js/index.js
+const pageHeader = document.querySelector(".page-header");
+const toggleMenu = document.querySelector(".toggle-menu");
+const player = document.querySelector("lottie-player");
+const menuWrapper = document.querySelector(".menu-wrapper");
+const menuOpenedClass = "menu-open";
+
+toggleMenu.addEventListener("click", function (e) {
+  console.log("click");
+  e.preventDefault();
+  pageHeader.classList.toggle(menuOpenedClass);
+  if (pageHeader.classList.contains(menuOpenedClass)) {
+    this.setAttribute("aria-label", "Close navigation");
+    this.setAttribute("aria-expanded", "true");
+    player.getLottie().playSegments([0, 45], true);
+  } else {
+    this.setAttribute("aria-label", "Open navigation");
+    this.setAttribute("aria-expanded", "false");
+    player.getLottie().playSegments([45, 0], true);
+    //player.getLottie().playSegments([46, 90], true);
+  }
+});
