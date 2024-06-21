@@ -253,10 +253,6 @@ a {
   height: 70px;
 }
 
-.devicons g {
-  fill: #034c47;
-}
-
 .parent-container-portfolio {
   display: flex;
   flex-direction: column;
