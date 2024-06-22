@@ -598,6 +598,11 @@ footer ul {
   padding: 10px;
 }
 
+.fa-brands,
+.fa-solid {
+  font-size: 2rem;
+}
+
 .fa-brands:visited,
 .fa-solid:link {
   color: white;
