@@ -12,16 +12,17 @@ function handleNavLinks(event) {
 links.forEach((link) => {
   link.addEventListener("click", handleNavLinks);
 });
-
-links.forEach((link) => {
-  link.addEventListener("click", function () {
-    pageHeader.classList.remove(menuOpenedClass);
-    toggleMenu.setAttribute("aria-label", "Open navigation");
-    toggleMenu.setAttribute("aria-expanded", "false");
-    player.getLottie().playSegments([45, 0], true);
+function closeMenuOnLinkClick() {
+  links.forEach((link) => {
+    link.addEventListener("click", function () {
+      pageHeader.classList.remove(menuOpenedClass);
+      toggleMenu.setAttribute("aria-label", "Open navigation");
+      toggleMenu.setAttribute("aria-expanded", "false");
+      player.getLottie().playSegments([45, 0], true);
+    });
   });
-});
-
+}
+closeMenuOnLinkClick();
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link");
   const sections = document.querySelectorAll("section[id]");
