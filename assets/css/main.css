@@ -137,6 +137,9 @@ a {
   font-weight: bold;
   font-size: 30px;
 }
+.page-header .logo span {
+  color: #2e7a89;
+}
 
 .page-header .menu-wrapper {
   transform: translateY(-200px);
