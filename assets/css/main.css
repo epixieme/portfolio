@@ -99,14 +99,17 @@ a {
   height: 100px;
   z-index: 1000;
   background-color: white;
+  display: flex;
+  align-items: center;
 }
 
 .page-header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
 }
 
 .page-header .page-header-inner {
@@ -172,7 +175,6 @@ a {
     transform: translateY(-100vh);
     overflow-y: auto;
     background: white;
-    z-index: 1000;
   }
 
   .page-header .menu-wrapper ul {
