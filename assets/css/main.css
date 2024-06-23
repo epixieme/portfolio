@@ -90,8 +90,6 @@ a {
   justify-content: space-between;
   width: 100%;
   padding-right: 20px;
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
 }
 
 .page-header .page-header-inner {
@@ -196,10 +194,9 @@ a {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
   color: #000000;
-  /* text-shadow: 1px 1px 1px #000; */
 }
+
 #banner h2 {
   font-size: 3em;
   margin: 0;
@@ -287,11 +284,7 @@ a {
 }
 
 .skills-button-grid {
-  /* border-radius: 10px; */
-
   width: 100%;
-  /* border: 1px solid white; */
-  /* padding-inline: 20px; */
   padding-block: 20px;
   display: grid;
   gap: 0.3rem;
@@ -444,6 +437,69 @@ img {
   object-fit: cover;
   vertical-align: middle;
 }
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f6e8e1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f6e8e1;
+  border-radius: 20px;
+  width: 80%;
+}
+
+.contact-form input,
+textarea {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #333333;
+}
+
+.contact-form input:focus {
+  outline: none;
+  border: 1px solid #b7a3c5;
+}
+
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #b7a3c5;
+}
+.contact-form textarea {
+  resize: none;
+}
+
+input {
+  width: 70%;
+}
+
+textarea {
+  width: 70%;
+  height: 200px;
+}
+
+.contact-form button:hover {
+  background: #b7a3c5;
+  color: #333333;
+}
+
+.contact-form button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #333333;
+  background: #333333;
+  color: white;
+}
 
 /* The secret sauce that enables gradient rotation. NOTE: does not work in all browsers. https://caniuse.com/?search=%40property */
 @property --border-angle-1 {
@@ -548,22 +604,17 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-
   align-items: center;
   justify-content: center;
   height: 100px;
   border-top: #b7a3c5 solid 1px;
   padding-inline: 20px;
   width: 100%;
-  /* border: 1px solid red; */
 }
 
 footer ul {
   color: white;
   display: flex;
-
-  /* flex-wrap: column;
-  /* align-items: center; */
   justify-content: center;
   width: 100%;
 }
@@ -592,72 +643,7 @@ footer ul {
 }
 
 @media screen and (min-width: 1080px) {
-  /* .header {
-
-
-    text-align: center;
-    display: flex;
-    align-items: center;
-
-    height: 80px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    justify-content: space-between;
-  } */
-  /* 
-  .header #logo {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 5vw;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-  }
-
-  .header #logo #blob-svg {
-    position: relative;
-    left: 0;
-    top: 0;
-    box-shadow: 0 8px 32px 0 #b7a3c5;
-  }
-  .header #logo p a,
-  .header #logo p a:visited {
-    color: #333333;
-  }
-
-  .header #logo p {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: #333333;
-    font-size: 16px;
-    z-index: 10;
-  } */
-
-  /* .navMenu {
-    color: white;
-    text-decoration: none;
-    margin: 0;
-    display: flex;
-    justify-content: space-evenly;
-    width: 50vw;
-  }
-
-  .nav-link,
-  a.nav-lLink {
-    text-decoration: none;
-    margin: 0 10px;
-  }
-
-  a.nav-link:hover {
-    color: #b7a3c5 !important;
-    font-weight: bold;
-  } */
-
   #banner {
-    /* background-color: #333; */
     color: white;
     text-align: center;
     display: flex;
@@ -815,7 +801,6 @@ footer ul {
 
   footer {
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     height: 100px;
   }
