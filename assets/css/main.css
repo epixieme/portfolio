@@ -591,6 +591,12 @@ button div {
   padding: 1em 1.5em;
   border-radius: calc(var(--border-radius) - var(--border-size));
   color: var(--foreground);
+  transition: all 0.5s;
+}
+
+button div:hover {
+  background-color: #b7a3c5;
+  color: #333333;
 }
 
 @font-face {
@@ -682,7 +688,6 @@ footer ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: ;
   }
 
   #banner h1 {
