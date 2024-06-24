@@ -642,6 +642,25 @@ footer ul {
   transform: scale(1.2);
 }
 
+.animate-hand {
+  animation: hand 1s infinite;
+  display: inline-block;
+}
+
+@keyframes hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Queries */
+
 @media screen and (min-width: 1080px) {
   #banner {
     color: white;
